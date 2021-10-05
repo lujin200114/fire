@@ -88,7 +88,8 @@ function login(timeout = 0) {
         result = JSON.parse(data);
         if (result.code == 1) {
            token = result.data.token
-           $.log(`\ntoken获取成功开始执行签到`)
+           $.log(`\ntoken获取成功
+开始执行签到`)
            await $.wait(3000);
            await sign(token);//签到
 		   await getask(token)//答题
