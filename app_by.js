@@ -2,8 +2,8 @@
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 注册地址：https://www.lnasgjp.com/#/register?m=18360935167
 
-变量： byPhone:手机号#密码
-export byPhone='手机号#密码'
+变量： app_by:手机号#密码
+export app_by='手机号#密码'
 */
 
 // [task_local]
@@ -14,51 +14,51 @@ export byPhone='手机号#密码'
 const $ = new Env('博越APP签到');
 let status;
 status = (status = ($.getval("bystatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
-let byPhoneArr = []
-let byPhone = $.isNode() ? (process.env.byPhone ? process.env.byPhone : "") : ($.getdata('byPhone') ? $.getdata('byPhone') : "")
-let byPhones = ""
+let app_byArr = []
+let app_by = $.isNode() ? (process.env.app_by ? process.env.app_by : "") : ($.getdata('app_by') ? $.getdata('app_by') : "")
+let app_bys = ""
 //
 !(async() => {
   if (typeof $request !== "undefined") {
     // byck()
   } else {
     if (!$.isNode()) {
-      byPhoneArr.push($.getdata('byPhone'))
+      app_byArr.push($.getdata('app_by'))
       let bycount = ($.getval('bycount') || '1');
       for (let i = 2; i <= bycount; i++) {
-        byPhoneArr.push($.getdata(`byPhone${i}`))
+        app_byArr.push($.getdata(`app_by${i}`))
       }
-      console.log(`-------------共${byPhoneArr.length}个账号-------------\n`)
-      for (let i = 0; i < byPhoneArr.length; i++) {
-        if (byPhoneArr[i]) {
-          byPhone = byPhoneArr[i];
+      console.log(`-------------共${app_byArr.length}个账号-------------\n`)
+      for (let i = 0; i < app_byArr.length; i++) {
+        if (app_byArr[i]) {
+          app_by = app_byArr[i];
           $.index = i + 1;
           console.log(`\n开始【博越账户 ${$.index}】`) 
-          zhanghu=byPhone.split('#')
+          zhanghu=app_by.split('#')
           user=zhanghu[0]
           mima=zhanghu[1]
           await login();//登录获取token
         }
       }
     } else {
-      if (process.env.byPhone && process.env.byPhone.indexOf('@') > -1) {
-        byPhoneArr = process.env.byPhone.split('@');
+      if (process.env.app_by && process.env.app_by.indexOf('@') > -1) {
+        app_byArr = process.env.app_by.split('@');
         console.log(`您选择的是用"@"隔开\n`)
       } else {
-        byPhones = [process.env.byPhone]
+        app_bys = [process.env.app_by]
       };
-      Object.keys(byPhones).forEach((item) => {
-        if (byPhones[item]) {
-          byPhoneArr.push(byPhones[item])
+      Object.keys(app_bys).forEach((item) => {
+        if (app_bys[item]) {
+          app_byArr.push(app_bys[item])
         }
       })
-      console.log(`共${byPhoneArr.length}个账号`)
-      for (let k = 0; k < byPhoneArr.length; k++) {
+      console.log(`共${app_byArr.length}个账号`)
+      for (let k = 0; k < app_byArr.length; k++) {
         $.message = ""
-        byPhone = byPhoneArr[k]
+        app_by = app_byArr[k]
         $.index = k + 1;
         console.log(`\n开始【博越账户 ${$.index}】`)
-        zhanghu=byPhone.split('#')
+        zhanghu=app_by.split('#')
         user=zhanghu[0]
         mima=zhanghu[1]
         await login();//登录获取token
