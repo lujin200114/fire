@@ -1,8 +1,8 @@
 /*
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
-注册地址：https://www.lnasgjp.com/#/register
-不含邀请链接
-byPhone:手机号#密码
+注册地址：https://www.lnasgjp.com/#/register?m=18360935167
+
+变量： byPhone:手机号#密码
 export byPhone='手机号#密码'
 */
 
