@@ -8,7 +8,7 @@ export byPhone='手机号#密码'
 
 // [task_local]
 //#博越
-// 10 0 * * * https://raw.fastgit.org/byxiaopeng/myscripts/main/byapp.js, tag=博越APP, enabled=true
+// 10 0 * * * https://raw.githubusercontent.com/lujin200114/fire/main/app_by.js, tag=博越APP, enabled=true
 
 
 const $ = new Env('博越APP签到');
