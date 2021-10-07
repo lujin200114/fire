@@ -1,5 +1,5 @@
 /*
-脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
+
 注册地址：https://admin.yourunsocks.com/#/register
 
 变量： app_ygy:手机号#密码
