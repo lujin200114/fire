@@ -1,6 +1,6 @@
 /*
 
-注册地址：https://admin.yourunsocks.com/#/register
+注册地址：https://admin.yoo-woo.com/#/register
 
 变量： app_ygy:手机号#密码
 export app_ygy='手机号#密码'
@@ -76,13 +76,13 @@ let app_ygys = ""
 function login(timeout = 0) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/index/login`,
+      url: `https://admin.yoo-woo.com/api/index/login`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
     },
       body: `{"username":"${user}","password":"${mima}","token":null}`,
     }
@@ -158,13 +158,13 @@ function login(timeout = 0) {
 function sign(token) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/user_sign/signDay`,
+      url: `https://admin.yoo-woo.com/api/user_sign/signDay`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer': 'https://www.yourunsocks.com/'
+        'Referer': 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -188,13 +188,13 @@ function sign(token) {
 function qiandaogoodslist(timeout = 0) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/user/qiandaogoodslist`,
+      url: `https://admin.yoo-woo.com/api/user/qiandaogoodslist`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -239,13 +239,13 @@ function qiandaogoodslist(timeout = 0) {
 function qiandaonum(timeout = 0) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/user/qiandaonum`,
+      url: `https://admin.yoo-woo.com/api/user/qiandaonum`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -312,13 +312,13 @@ function qiandaonum(timeout = 0) {
 function qiandao(num) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/user/qiandao`,
+      url: `https://admin.yoo-woo.com/api/user/qiandao`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"type":${num},"token":"${token}"}`,
     }
@@ -344,13 +344,13 @@ function getChiwancanEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getChiwancanEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getChiwancanEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -386,13 +386,13 @@ function getChiwucanEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getChiwucanEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getChiwucanEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -428,13 +428,13 @@ function getChizaocanEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getChizaocanEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getChizaocanEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -468,13 +468,13 @@ function getChizaocanEventList(token) {
 function xinxi(token) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/tree/getSeedTask`,
+      url: `https://admin.yoo-woo.com/api/tree/getSeedTask`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer': 'https://www.yourunsocks.com/'
+        'Referer': 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -508,13 +508,13 @@ function xinxi(token) {
 function getask(token) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/index/getask`,
+      url: `https://admin.yoo-woo.com/api/index/getask`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"id":49,"key":4,"token":"${token}"}`,
     }
@@ -540,13 +540,13 @@ function getask(token) {
 function getAnswer(token) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/index/getAnswer`,
+      url: `https://admin.yoo-woo.com/api/index/getAnswer`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"type":3,"token":"${token}"}`,
     }
@@ -572,13 +572,13 @@ function getAnswer(token) {
 function getSportEventList(token) {
   return new Promise((resolve) => {
     let url = {
-      url: `https://admin.yourunsocks.com/api/index/getSportEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getSportEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -644,13 +644,13 @@ function getNightEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getNightEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getNightEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -686,13 +686,13 @@ function getMormingEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getMormingEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getMormingEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -728,13 +728,13 @@ function getYueduEventList(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/index/getYueduEventList`,
+      url: `https://admin.yoo-woo.com/api/index/getYueduEventList`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"token":"${token}"}`,
     }
@@ -770,13 +770,13 @@ function takeExercises(num) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `http://admin.yourunsocks.com/api/index/takeExercises`,
+      url: `http://admin.yoo-woo.com/api/index/takeExercises`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'aapplication/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"sid":${num},"token":"${token}"}`,
     }
@@ -807,13 +807,13 @@ function receiveRewardsExercises(num) {
   return new Promise((resolve) => {
    
 	let url = {
-      url: `http://admin.yourunsocks.com/api/index/receiveRewardsExercises`,
+      url: `http://admin.yoo-woo.com/api/index/receiveRewardsExercises`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'aapplication/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"sid":${num},"token":"${token}"}`,
     }
@@ -839,13 +839,13 @@ function getIntegralByVideo(num) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/tree/getIntegralByVideo`,
+      url: `https://admin.yoo-woo.com/api/tree/getIntegralByVideo`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"id":${num},"token":"${token}"}`,
     }
@@ -876,13 +876,13 @@ function jiaoshui(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/tree/seedAction`,
+      url: `https://admin.yoo-woo.com/api/tree/seedAction`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"seed_task_uuid": "${seed_task_uuid}","action_type": "drop","token":"${token}"}`,
     }
@@ -913,13 +913,13 @@ function shifei(token) {
   return new Promise((resolve) => {
     
 	let url = {
-      url: `https://admin.yourunsocks.com/api/tree/seedAction`,
+      url: `https://admin.yoo-woo.com/api/tree/seedAction`,
       headers: {
-        'Host': 'admin.yourunsocks.com',
+        'Host': 'admin.yoo-woo.com',
         'Content-Type': 'application/json;charset=utf-8',
-        'Origin': 'https://www.yourunsocks.com',
+        'Origin': 'https://www.yoo-woo.com',
         'user-agent': 'Mozilla/5.0 (iPad; CPU OS 14_4_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
-        'Referer' : 'https://www.yourunsocks.com/'
+        'Referer' : 'https://www.yoo-woo.com/'
       },
       body: `{"seed_task_uuid": "${seed_task_uuid}","action_type": "manure","token":"${token}"}`,
     }
