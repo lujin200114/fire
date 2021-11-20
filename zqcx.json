@@ -1,0 +1,62 @@
+{
+  "name": "中青重写订阅",
+  "author": "elecV2p",
+  "mitmhost": ["kandian.wkandian.com"],
+  "rewrite": [
+    {
+      "match": "https://kandian.wkandian.com/v5/article/info.json",
+      "target": "zq/zqwz.js",
+      "enable": true
+    },
+    {
+      "match": "https://kandian.wkandian.com/v5/article/detail.json",
+      "target": "zq/zqwz.js",
+      "enable": true
+    },
+    {
+      "match": "https://kandian.wkandian.com/v5/user/stay.json",
+      "target": "zq/zqwz.js",
+      "enable": true
+    }, 
+    {
+      "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
+      "target": "zq/zqqd.js",
+      "enable": true
+    },
+    {
+      "match": "https://kandian.wkandian.com/v17/NewTask/getTaskList.json",
+      "target": "zq/zq_today_score.js",
+      "enable": true
+    }
+    ,
+    {
+      "match": "https://kandian.wkandian.com/v5/nameless/adlickstart.json",
+      "target": "zq/zqkkz.js",
+      "enable": true
+    }
+    ,
+    {
+      "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
+      "target": "zq/zqbox.js",
+      "enable": true
+    }
+     ,
+    {
+      "match": "https://kandian.wkandian.com/v5/wechat/withdraw2.json",
+      "target": "zq/zq_withdraw.js",
+      "enable": true
+    } 
+    ,
+    {
+      "match": "https://kandian.wkandian.com/v5/task/browse_start.json",
+      "target": "zq/zqllz.js",
+      "enable": true
+    }
+    ,
+    {
+      "match": "https://kandian.wkandian.com/v5/Sousuo/playStart.json",
+      "target": "zq/zqssz.js",
+      "enable": true
+    }
+  ]
+}
